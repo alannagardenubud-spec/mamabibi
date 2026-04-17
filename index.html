@@ -1,80 +1,531 @@
-<!DOCTYPE html><html lang="en" xml:lang="en"><head>
-<META http-equiv="Content-Type" content="text/html">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="content-language" content="en"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><link href="rsrc/htmlhelp_simpletoc.css" rel="stylesheet" type="text/css"><title> Welcome </title></head><!--Publication GUID: [GUID-BC990B43-3F11-4C46-9757-E4A61209745C]--><!--Topic GUID: [GUID-5A265983-7BC6-49DF-AE2B-064D502C5D10]--><body><div id="wrapper"><div class="pageheader"></div><div class="toc"><ol>
-<li class='toc-title toc-level1'><h3>Introduction</h3></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000002000000.htm'>Welcome</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000003000000.htm'>License manager basics</a></li>
-<li class='toc-title toc-level1'><h3>Getting Started</h3></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000039000000.htm'>Supported Software Products</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000005000000.htm'>License manager installation and startup</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000006000000.htm'>Client machine setup</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000002q000000.htm'>Existing users</a></li>
-<li class='toc-title toc-level1'><h3>Administering the License Manager</h3></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000004000000.htm'>Using the ArcGIS License Server Administrator</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000007000000.htm'>Starting and stopping the License Manager</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000008000000.htm'>Checking the license server status</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000009000000.htm'>Configuring license borrowing</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000000m000000.htm'>Viewing the audit log</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000000n000000.htm'>Viewing license availability</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000000p000000.htm'>Authorizing additional features</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000000q000000.htm'>Diagnosing errors</a></li>
-<li class='toc-title toc-level1'><h3>ArcGIS License Manager for Portal for ArcGIS</h3></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000035000000.htm'>Introduction to ArcGIS License Manager for  Portal for ArcGIS</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000031000000.htm'>Configure License Manager for use with Portal for ArcGIS</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000033000000.htm'>Useful Information and Best Practices</a></li>
-<li class='toc-title toc-level1'><h3>Advanced Topics</h3></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000000r000000.htm'>Automatically starting the License Manager</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000000s000000.htm'>Batch processes</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000000t000000.htm'>Defining &lt;port&gt;@&lt;host&gt; to one or more license servers</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000000v000000.htm'>Backup license servers</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000000w000000.htm'>Configure ArcGIS License Manager to work through a firewall</a></li>
-<ol class='toc-level2'>
-<li class='toc-title toc-level2'><h3>The Options File</h3></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='00790000000z000000.htm'>Using the options file</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='00790000003n000000.htm'>ACTIVATION_EXPIRY_DAYS</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000029000000.htm'>DEBUGLOG</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000011000000.htm'>EXCLUDE</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000012000000.htm'>EXCLUDE_ENTITLEMENT</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000013000000.htm'>EXCLUDEALL</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000014000000.htm'>GROUP</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='00790000002z000000.htm'>GROUPCASEINSENSITIVE</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000015000000.htm'>HOST_GROUP</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000016000000.htm'>INCLUDE</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000017000000.htm'>INCLUDE_ENTITLEMENT</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000018000000.htm'>INCLUDEALL</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='007900000019000000.htm'>MAX</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='00790000001m000000.htm'>NOLOG</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='00790000001n000000.htm'>RESERVE</a></li>
-<li class='toc-level2'><i>&#x02022;</i>&nbsp;<a href='00790000003m000000.htm'>Feature Names for ArcGIS License Manager Options file</a></li>
-</ol>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000002p000000.htm'>Transferring licenses from one license manager to another</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000001p000000.htm'>Using the license manager on Windows Terminal Server/Citrix</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000002n000000.htm'>Enterprise deployment of the ArcGIS for Desktop or ArcGIS Engine licenses</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000002s000000.htm'>Provisioning files</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000030000000.htm'>Silent Authorization Commands</a></li>
-<li class='toc-title toc-level1'><h3>Troubleshooting</h3></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000001q000000.htm'>Incorrect clock setting</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000001r000000.htm'>Cannot connect to the license manager</a></li>
-<li class='toc-title toc-level1'><h3>Glossary</h3></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000001s000000.htm'>ArcGIS Administrator</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000001t000000.htm'>ArcGIS License Manager</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000001v000000.htm'>authorization</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000001w000000.htm'>borrow</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000001z000000.htm'>Concurrent use</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000020000000.htm'>daemon</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000021000000.htm'>debug log file</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000022000000.htm'>feature</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000023000000.htm'>license</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000024000000.htm'>License Manager</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000025000000.htm'>license server</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000036000000.htm'>named user</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000032000000.htm'>Portal for ArcGIS</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='00790000002v000000.htm'>provisioning file</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000026000000.htm'>Return</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000034000000.htm'>simultaneous session</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000027000000.htm'>Single use</a></li>
-<li class='toc-level1'><i>&#x02022;</i>&nbsp;<a href='007900000028000000.htm'>Software Authorization Wizard</a></li>
-</ol></div><div id="content"><div class="header"><h1> Welcome </h1></div>
-<p id="GUID-A76BED62-C338-4318-A9FE-51D402047278">  This guide is designed to help you perform tasks common to license management. The primary audience for this guide is any site administrator responsible for installing and managing <span purpose="ph" varid="ArcGISforDesktop">ArcGIS for Desktop</span>, ArcGIS Engine, Esri CityEngine, ArcInfo Workstation, or ArcGIS Pro concurrent use, and ArcGIS Pro named user via an on-premise Portal for ArcGIS. This documentation will assist you in using ArcGIS License Manager and troubleshooting issues that may arise during its use. In the list of contents, click the topic you want to learn more about. You can also search for a particular topic using the <span class="uicontrol">Search</span> window. </p>
-<div class="section1" id="GUID-20FF3701-A724-4B0C-A920-DB927D1F934A" purpose="section1"><h2> How to use this document </h2><p id="GUID-CC0D1141-3816-428A-9991-446824C2CCE7">This document is divided into the sections below:</p><div class="section2" id="ESRI_SECTION2_9D7ED35516954470B1B6B0F4338C02BB" purpose="section2"><h3>Getting started</h3><p id="GUID-AFF0C6E2-1890-4016-9909-42F4C70D0728">The Getting started section provides installation and startup information that will help you get ArcGIS License Manager  running.  It also describes the process to set up the client machines to use the license manager.</p></div><div class="section2" id="ESRI_SECTION2_921A01D558C947B6B38C8823D21CC6D1" purpose="section2"><h3>Administering the License Manager</h3><p id="GUID-949D1961-ED24-487A-850A-CD52CC11B6F4">This section provides information that will assist you in using ArcGIS License Manager and managing your licenses. This section provides information on <a class="xref" href="007900000009000000.htm" rel="007900000009000000.htm">configuring license borrowing</a> and <a class="xref" href="00790000000n000000.htm" rel="00790000000n000000.htm">viewing license availability</a>.</p></div><div class="section2" id="ESRI_SECTION2_534A0A2740584B03979FEB7B6918A384" purpose="section2"><h3>ArcGIS License Manager for Portal for ArcGIS   </h3><p id="GUID-00464639-7201-47CE-8907-3F58BA3EA19F">In this section, instructions can be found for authorizing and <a class="xref" href="007900000031000000.htm" rel="007900000031000000.htm">configuring ArcGIS License Manager</a> for use with named user ArcGIS Pro via an on-premise Portal for ArcGIS instance.  Useful Information and helpful hints can be found in this <a class="xref" href="007900000033000000.htm" rel="007900000033000000.htm">topic</a>.  </p></div><div class="section2" id="ESRI_SECTION2_0E324A107F7B48CCAD164E65EFE79AB4" purpose="section2"><h3>Advanced topics</h3><p id="GUID-0DD0762A-FA78-454B-89AC-A31B1B324CE3">Refer to this section for complex license management issues, such as <a class="xref" href="00790000000z000000.htm" rel="00790000000z000000.htm">using the options file</a> or <a class="xref" href="00790000000v000000.htm" rel="00790000000v000000.htm">failover license servers</a>.</p></div><div class="section2" id="ESRI_SECTION2_6DAAFE94E84E4AE9A75FE4FD59E80D6D" purpose="section2"><h3>Troubleshooting</h3><p id="GUID-263BD552-FA3A-4591-980C-C67526FF623D">This section lists common problems with the license manager, probable causes, and suggested solutions. For example, if you have trouble connecting to a Windows license server, see <a class="xref" href="00790000001r000000.htm" rel="00790000001r000000.htm">Cannot connect to license server</a>.</p></div><div class="section2" id="ESRI_SECTION2_A996AFD78FEF4941ADCD343DBE1AA5D0" purpose="section2"><h3>Glossary</h3><p id="GUID-C78598E3-6982-4EC2-85B5-82CD7D6AAEB2">The glossary contains definitions of commonly used ArcGIS copy protection terms.</p></div><div class="section2" id="ESRI_SECTION2_1C4708D3B41E4E4FAC9CC45E64CAFBA8" purpose="section2"><h3>Contacting Esri Customer Service</h3><p id="GUID-5CA0AF77-FFEC-47AC-A7D4-C6B345546970">If for any reason you are unable to locate your authorization information, you can contact Esri Customer Service and request that it be sent again.</p><p id="GUID-FDF5E087-6475-44B0-BE89-0D84A315B428">In the United States, you can contact Esri Customer Service by calling 888-377-4575 or visiting the <a target="_blank" class="xref" href="http://my.esri.com" rel="http://my.esri.com">My Esri Site</a>.</p><p id="GUID-48B02A17-8AFA-4EB3-991D-09E900150611">Outside the United States, contact your local Esri distributor. For information regarding your local distributor, visit the following <a target="_blank" class="xref" href="http://www.esri.com/about-esri/contact" rel="http://www.esri.com/about-esri/contact">website</a>.<b></b></p></div><div class="section2" id="ESRI_SECTION2_53D3397C201C463BA24B7B9C8F29EE51" purpose="section2"><h3>Technical Support Knowledge Base</h3><p id="GUID-27C563E5-8C60-4D52-807B-72B194225305">If you are unable to find the information you need in this guide, refer to the Esri Technical Support Knowledge Base at <a target="_blank" class="xref" href="http://support.esri.com" rel="http://support.esri.com">support.esri.com</a>.</p><p id="GUID-BC84CFF0-1EE9-468D-86EC-4471ACB1154F"></p></div></div>
-<div class="footer"> Copyright © 1995-2016 Esri. All rights reserved. </div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama Bibi - Pesan & Bayar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Space Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #020202; font-family: 'Inter', sans-serif; }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Space Grotesk', sans-serif; }
+    .grain { position: fixed; inset: 0; z-index: 40; pointer-events: none; opacity: 0.03; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-in { animation: fadeInUp 0.6s cubic-bezier(0.2,0.8,0.2,1) forwards; }
+    .delay-1 { animation-delay: 100ms; opacity: 0; }
+    .delay-2 { animation-delay: 200ms; opacity: 0; }
+    .delay-3 { animation-delay: 300ms; opacity: 0; }
+    .delay-4 { animation-delay: 400ms; }
+    .delay-5 { animation-delay: 500ms; opacity: 0; }
+
+    @keyframes ping { 75%, 100% { transform: scale(2); opacity: 0; } }
+    .ping-dot { animation: ping 1.5s cubic-bezier(0,0,0.2,1) infinite; }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(100%); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .slide-up { animation: slideUp 0.4s cubic-bezier(0.2,0.8,0.2,1) forwards; }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .fade-in { animation: fadeIn 0.3s ease forwards; }
+
+    @keyframes expandIn {
+      from { opacity: 0; max-height: 0; }
+      to { opacity: 1; max-height: 200px; }
+    }
+    .expand-in { animation: expandIn 0.35s cubic-bezier(0.2,0.8,0.2,1) forwards; overflow: hidden; }
+
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    .shimmer-text {
+      background: linear-gradient(90deg, #FB923C, #FDBA74, #FB923C);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 3s linear infinite;
+    }
+
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateY(-20px) scale(0.95); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @keyframes toastOut {
+      from { opacity: 1; transform: translateY(0) scale(1); }
+      to { opacity: 0; transform: translateY(-20px) scale(0.95); }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-4px); }
+      40%, 80% { transform: translateX(4px); }
+    }
+    .shake { animation: shake 0.4s ease; }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(22,163,74,0.3); }
+      50% { box-shadow: 0 0 30px rgba(22,163,74,0.5); }
+    }
+    .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+
+    .menu-card { transition: all 0.4s cubic-bezier(0.2,0.8,0.2,1); }
+    .menu-card:hover { transform: translateY(-2px); box-shadow: 0 0 40px -10px rgba(251,146,60,0.15); }
+
+    .qty-btn { transition: all 0.2s ease; }
+    .qty-btn:active { transform: scale(0.9); }
+    .option-btn { transition: all 0.3s ease; }
+
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+  </style>
+</head>
+<body class="text-white min-h-screen pb-28">
+
+  <svg class="grain" width="100%" height="100%">
+    <filter id="g"><feTurbulence baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter>
+    <rect width="100%" height="100%" filter="url(#g)"/>
+  </svg>
+
+  <div id="toast-container" class="fixed top-4 left-1/2 -translate-x-1/2 z-[60] flex flex-col gap-2 items-center pointer-events-none"></div>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-30 backdrop-blur-md bg-black/60 border-b border-white/5">
+    <div class="max-w-lg mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="w-9"></div>
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-lg bg-orange-400/10 border border-orange-400/20 flex items-center justify-center">
+          <span class="text-orange-400 font-heading font-semibold text-xs">MB</span>
+        </div>
+        <h1 class="font-heading font-medium text-sm tracking-tight text-white">Mama Bibi</h1>
+      </div>
+      <button onclick="resetOrder()" class="text-neutral-500 hover:text-white transition-colors p-2" title="Reset">
+        <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-lg mx-auto px-4 pt-20">
+
+    <!-- Nama Toko -->
+    <div class="animate-in delay-1 mt-6 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-400/15 bg-orange-400/5 mb-3">
+        <span class="relative flex h-1.5 w-1.5" id="status-dot">
+          <span class="ping-dot absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-orange-400" id="status-dot-inner"></span>
+        </span>
+        <span class="text-[10px] text-orange-300/70 uppercase tracking-widest" id="status-text">Buka</span>
+      </div>
+      <h2 class="font-heading text-3xl font-medium tracking-tight shimmer-text">Mama Bibi</h2>
+      <p class="text-neutral-500 text-sm mt-1">Ayam Crispy dengan Berbagai Rasa</p>
+      <div class="flex items-center justify-center gap-4 mt-3">
+        <div class="flex items-center gap-1.5 text-neutral-500 text-xs">
+          <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+          <span>10:00 - 20:00</span>
+        </div>
+        <div class="w-px h-3 bg-neutral-800"></div>
+        <a href="https://wa.me/6285163519464" target="_blank" class="flex items-center gap-1.5 text-orange-400/60 hover:text-orange-400 text-xs transition-colors">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>0851-6351-9464</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="animate-in delay-1 mt-5 relative rounded-2xl overflow-hidden border border-orange-400/10" style="background: radial-gradient(circle at top right, rgba(251,146,60,0.08), transparent 60%), #050505;">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-orange-400/5 rounded-full blur-3xl"></div>
+      <div class="p-5 relative flex items-center gap-4">
+        <div class="text-3xl">🍗</div>
+        <div>
+          <h3 class="font-heading text-lg font-medium tracking-tight">Pesan disini tanpa antri</h3>
+          <p class="text-neutral-500 text-sm mt-0.5">Pilih menu, kirim pesanan via WhatsApp</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nama Pemesan -->
+    <div class="mt-8 animate-in delay-2">
+      <h3 class="font-heading text-xs font-medium uppercase tracking-widest text-neutral-500 mb-4 px-1">Nama Pemesan</h3>
+      <div class="relative" id="name-wrapper">
+        <i data-lucide="user" class="w-4 h-4 text-neutral-500 absolute left-3 top-3.5"></i>
+        <input id="customer-name" type="text" placeholder="Masukkan nama kamu..." autocomplete="off"
+          class="w-full bg-[#050505] border border-white/5 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-orange-400/30 transition-colors">
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="mt-8 animate-in delay-2">
+      <h3 class="font-heading text-xs font-medium uppercase tracking-widest text-neutral-500 mb-4 px-1">Pilih Menu</h3>
+      <div class="space-y-3" id="menu-list"></div>
+    </div>
+
+    <!-- Add-ons -->
+    <div class="mt-8 animate-in delay-3">
+      <h3 class="font-heading text-xs font-medium uppercase tracking-widest text-neutral-500 mb-4 px-1">Tambah Extra</h3>
+      <div class="space-y-3" id="addon-list"></div>
+    </div>
+
+    <!-- Pengiriman -->
+    <div class="mt-8 animate-in delay-4">
+      <h3 class="font-heading text-xs font-medium uppercase tracking-widest text-neutral-500 mb-4 px-1">Cara Terima</h3>
+      <div class="grid grid-cols-2 gap-2" id="delivery-options"></div>
+      <div id="address-field" class="hidden mt-3"></div>
+    </div>
+
+    <!-- Catatan -->
+    <div class="mt-8 animate-in delay-5 mb-6">
+      <h3 class="font-heading text-xs font-medium uppercase tracking-widest text-neutral-500 mb-4 px-1">Catatan</h3>
+      <textarea id="notes" rows="2" placeholder="Contoh: pedas banget, nasi double..."
+        class="w-full bg-[#050505] border border-white/5 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-orange-400/30 transition-colors resize-none"></textarea>
+    </div>
+
+  </main>
+
+  <!-- Bottom Bar -->
+  <div id="bottom-bar" class="fixed bottom-0 left-0 right-0 z-30 bg-black/80 backdrop-blur-xl border-t border-white/5">
+    <div class="max-w-lg mx-auto px-4 py-4">
+      <div id="order-summary" class="hidden">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-sm text-neutral-400" id="item-count">0 item</span>
+          <div class="flex items-center gap-1">
+            <span class="text-xs text-neutral-500">Total</span>
+            <span class="font-heading text-xl font-medium text-orange-400" id="total-price">Rp 0</span>
+          </div>
+        </div>
+        <button onclick="sendToWhatsApp()" id="pay-btn" class="w-full py-3.5 rounded-xl bg-green-600 text-white text-sm font-medium hover:scale-[1.02] transition-transform flex items-center justify-center gap-2.5 pulse-glow">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>Pesan via WhatsApp</span>
+        </button>
+      </div>
+      <div id="empty-state" class="text-center py-2">
+        <p class="text-neutral-600 text-sm">Pilih menu untuk mulai pesan</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail Modal -->
+  <div id="detail-modal" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="hideDetail()"></div>
+    <div class="absolute bottom-0 left-0 right-0 max-w-lg mx-auto">
+      <div class="slide-up bg-[#0a0a0a] border-t border-white/10 rounded-t-3xl p-6 max-h-[70vh] overflow-y-auto">
+        <div class="w-10 h-1 bg-neutral-700 rounded-full mx-auto mb-5"></div>
+        <h3 class="font-heading text-lg font-medium mb-4">Detail Pesanan</h3>
+        <div id="detail-name" class="mb-3"></div>
+        <div id="detail-items" class="space-y-3"></div>
+        <div id="detail-extras" class="mt-3 space-y-2"></div>
+        <div class="border-t border-white/10 mt-4 pt-3 space-y-1">
+          <div id="detail-delivery-row" class="flex justify-between text-sm"></div>
+          <div class="flex justify-between items-center">
+            <span class="text-neutral-400 text-sm">Total Pembayaran</span>
+            <span class="font-heading text-xl font-medium text-orange-400" id="detail-total">Rp 0</span>
+          </div>
+        </div>
+        <button onclick="hideDetail()" class="w-full mt-5 py-3 rounded-xl border border-white/10 text-sm font-medium text-neutral-300 hover:bg-white/5 transition-colors">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // =============================================
+    // ⚡ SETTINGS — edit di sini
+    // =============================================
+    const WHATSAPP_NUMBER = '6285163519464';
+    const JAM_BUKA = 10;
+    const JAM_TUTUP = 20;
+    // =============================================
+
+    const menus = [
+      { id: 'korea', name: 'Ayam Korea', price: 16000, emoji: '🍗', tag: 'Best Seller' },
+      { id: 'bbq', name: 'Ayam BBQ', price: 16000, emoji: '🔥', tag: null },
+      { id: 'teriyaki', name: 'Ayam Teriyaki', price: 16000, emoji: '🥢', tag: null },
+      { id: 'keju', name: 'Ayam Keju Meleleh', price: 16000, emoji: '🧀', tag: 'Favorit' },
+      { id: 'pepper', name: 'Ayam Blackpepper', price: 16000, emoji: '🌶️', tag: null },
+    ];
+
+    const addons = [
+      { id: 'teh', name: 'Es Teh', price: 4000, emoji: '🧊' },
+      { id: 'keju_extra', name: 'Extra Keju', price: 4000, emoji: '🧀' },
+    ];
+
+    const deliveryOptions = [
+      { id: 'ambil', name: 'Ambil Sendiri', icon: 'store', desc: 'Datang ke tempat' },
+      { id: 'antar', name: 'Diantar', icon: 'bike', desc: 'Ongkir sesuai jarak' },
+    ];
+
+    let cart = {};
+    let selectedDelivery = 'ambil';
+
+    // ── Helpers ──
+    function fmt(n) { return 'Rp ' + n.toLocaleString('id-ID'); }
+    function calcSubtotal() { let t = 0; [...menus, ...addons].forEach(i => { if (cart[i.id]) t += i.price * cart[i.id] }); return t; }
+    function getCustomerName() { return document.getElementById('customer-name').value.trim(); }
+
+    // ── Jam Buka ──
+    function checkOpenStatus() {
+      const hour = new Date().getHours();
+      const isOpen = hour >= JAM_BUKA && hour < JAM_TUTUP;
+      const st = document.getElementById('status-text');
+      const dotO = document.querySelector('#status-dot .ping-dot');
+      const dotI = document.getElementById('status-dot-inner');
+      const btn = document.getElementById('pay-btn');
+      if (!btn) return;
+
+      if (isOpen) {
+        st.textContent = 'Buka'; st.className = 'text-[10px] text-orange-300/70 uppercase tracking-widest';
+        dotO.className = 'ping-dot absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75';
+        dotI.className = 'relative inline-flex rounded-full h-1.5 w-1.5 bg-orange-400';
+        btn.disabled = false; btn.classList.remove('opacity-40', 'pointer-events-none');
+      } else {
+        st.textContent = 'Tutup'; st.className = 'text-[10px] text-red-400/70 uppercase tracking-widest';
+        dotO.className = 'ping-dot absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75';
+        dotI.className = 'relative inline-flex rounded-full h-1.5 w-1.5 bg-red-400';
+        btn.disabled = true; btn.classList.add('opacity-40', 'pointer-events-none');
+      }
+    }
+
+    // ── Render Menu ──
+    function renderMenus() {
+      document.getElementById('menu-list').innerHTML = menus.map(m => `
+        <div class="menu-card bg-[#050505] border border-white/5 rounded-2xl p-4 flex items-center gap-4">
+          <div class="w-14 h-14 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center text-2xl shrink-0">${m.emoji}</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <h4 class="font-heading font-medium text-sm truncate">${m.name}</h4>
+              ${m.tag ? <span class="px-2 py-0.5 rounded-full bg-orange-400/10 text-orange-400 text-[9px] font-medium uppercase tracking-wider shrink-0">${m.tag}</span> : ''}
+            </div>
+            <div class="flex items-center gap-2 mt-0.5">
+              <span class="font-heading text-orange-400 font-medium text-sm">${fmt(m.price)}</span>
+              <span class="text-[10px] text-neutral-600">+ nasi gratis</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5 shrink-0">
+            <button onclick="updateQty('${m.id}', -1)" class="qty-btn w-8 h-8 rounded-lg ${cart[m.id] ? 'bg-white/5 border border-white/10 text-white' : 'bg-transparent text-neutral-700'} flex items-center justify-center hover:bg-white/10 transition-colors">
+              <i data-lucide="${cart[m.id] ? 'minus' : 'plus'}" class="w-3.5 h-3.5"></i>
+            </button>
+            ${cart[m.id] ? <span class="w-7 text-center font-heading text-sm font-medium">${cart[m.id]}</span> : ''}
+            <button onclick="updateQty('${m.id}', 1)" class="qty-btn w-8 h-8 rounded-lg ${cart[m.id] ? 'bg-white/5 border border-white/10 text-white' : 'bg-orange-400/10 border border-orange-400/20 text-orange-400'} flex items-center justify-center hover:bg-white/10 transition-colors">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+      `).join('');
+      lucide.createIcons();
+    }
+
+    function renderAddons() {
+      document.getElementById('addon-list').innerHTML = addons.map(a => `
+        <div class="menu-card bg-[#050505] border border-white/5 rounded-2xl p-4 flex items-center gap-4">
+          <div class="w-11 h-11 rounded-lg bg-white/[0.03] border border-white/5 flex items-center justify-center text-xl shrink-0">${a.emoji}</div>
+          <div class="flex-1">
+            <h4 class="font-heading font-medium text-sm">${a.name}</h4>
+            <span class="font-heading text-orange-400 font-medium text-sm">${fmt(a.price)}</span>
+          </div>
+          <div class="flex items-center gap-1.5 shrink-0">
+            <button onclick="updateQty('${a.id}', -1)" class="qty-btn w-8 h-8 rounded-lg ${cart[a.id] ? 'bg-white/5 border border-white/10 text-white' : 'bg-transparent text-neutral-700'} flex items-center justify-center hover:bg-white/10 transition-colors">
+              <i data-lucide="${cart[a.id] ? 'minus' : 'plus'}" class="w-3.5 h-3.5"></i>
+            </button>
+            ${cart[a.id] ? <span class="w-7 text-center font-heading text-sm font-medium">${cart[a.id]}</span> : ''}
+            <button onclick="updateQty('${a.id}', 1)" class="qty-btn w-8 h-8 rounded-lg ${cart[a.id] ? 'bg-white/5 border border-white/10 text-white' : 'bg-orange-400/10 border border-orange-400/20 text-orange-400'} flex items-center justify-center hover:bg-white/10 transition-colors">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+      `).join('');
+      lucide.createIcons();
+    }
+
+    function renderDelivery() {
+      document.getElementById('delivery-options').innerHTML = deliveryOptions.map(d => `
+        <button onclick="selectDelivery('${d.id}')" class="option-btn rounded-xl border ${selectedDelivery === d.id ? 'border-orange-400 bg-orange-400/8' : 'border-white/5 bg-[#050505]'} p-4 flex flex-col items-center gap-2 text-center">
+          <i data-lucide="${d.icon}" class="w-5 h-5 ${selectedDelivery === d.id ? 'text-orange-400' : 'text-neutral-500'}"></i>
+          <span class="text-sm font-medium ${selectedDelivery === d.id ? 'text-orange-400' : 'text-neutral-300'}">${d.name}</span>
+          <span class="text-[10px] text-neutral-600">${d.desc}</span>
+        </button>
+      `).join('');
+      const af = document.getElementById('address-field');
+      if (selectedDelivery === 'antar') {
+        af.innerHTML = <div class="expand-in"><div class="relative"><i data-lucide="map-pin" class="w-4 h-4 text-neutral-500 absolute left-3 top-3.5"></i><input id="address" type="text" placeholder="Alamat lengkap pengiriman..." class="w-full bg-[#050505] border border-white/5 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-orange-400/30 transition-colors"></div><p class="text-[10px] text-neutral-600 mt-1.5 px-1">Ongkir dihitung saat konfirmasi oleh penjual</p></div>;
+        af.classList.remove('hidden');
+      } else { af.classList.add('hidden'); af.innerHTML = ''; }
+      lucide.createIcons();
+    }
+
+    function updateBottomBar() {
+      const count = Object.entries(cart).reduce((s, [, q]) => s + q, 0);
+      document.getElementById('order-summary').classList.toggle('hidden', count === 0);
+      document.getElementById('empty-state').classList.toggle('hidden', count > 0);
+      document.getElementById('item-count').textContent = ${count} item;
+      document.getElementById('total-price').textContent = fmt(calcSubtotal());
+    }
+
+    function updateQty(id, d) { if (!cart[id]) cart[id] = 0; cart[id] += d; if (cart[id] <= 0) delete cart[id]; renderAll(); }
+    function selectDelivery(id) { selectedDelivery = id; renderDelivery(); }
+    function getDeliveryLabel() { return deliveryOptions.find(d => d.id === selectedDelivery)?.name || ''; }
+
+    // ── Detail Modal ──
+    function showDetail() {
+      const name = getCustomerName();
+      document.getElementById('detail-name').innerHTML = name
+        ? <div class="flex items-center gap-2 text-sm"><span class="text-neutral-500">Pemesan:</span><span class="text-orange-400 font-medium">${name}</span></div>
+        : <div class="flex items-center gap-2 text-sm text-yellow-400/60"><i data-lucide="alert-circle" class="w-3.5 h-3.5"></i><span>Nama belum diisi</span></div>;
+      const all = [...menus, ...addons], mids = menus.map(m => m.id), aids = addons.map(a => a.id);
+      document.getElementById('detail-items').innerHTML = Object.entries(cart).filter(([id]) => mids.includes(id)).map(([id, q]) => { const it = all.find(i => i.id === id); return <div class="flex items-center justify-between"><div class="flex items-center gap-3"><span class="text-lg">${it.emoji}</span><div><span class="text-sm">${it.name}</span><span class="text-neutral-500 text-xs ml-2">x${q}</span></div></div><span class="font-heading text-sm text-neutral-300">${fmt(it.price * q)}</span></div>; }).join('');
+      const ae = Object.entries(cart).filter(([id]) => aids.includes(id));
+      document.getElementById('detail-extras').innerHTML = ae.length ? <p class="text-[10px] uppercase tracking-widest text-neutral-600 mb-1">Extra</p>${ae.map(([id, q]) => { const it = all.find(i => i.id === id); return `<div class="flex items-center justify-between"><div class="flex items-center gap-3"><span class="text-lg">${it.emoji}</span><div><span class="text-sm">${it.name}</span><span class="text-neutral-500 text-xs ml-2">x${q}</span></div></div><span class="font-heading text-sm text-neutral-300">${fmt(it.price * q)}</span></div>; }).join('')}` : '';
+      const dr = document.getElementById('detail-delivery-row');
+      if (selectedDelivery === 'antar') { const a = document.getElementById('address')?.value || ''; dr.innerHTML = <div><span class="text-neutral-500 text-xs">Diantar ke</span><p class="text-sm text-neutral-300">${a || '-'}</p></div><span class="text-xs text-neutral-500">Ongkir nanti</span>; }
+      else { dr.innerHTML = <span class="text-neutral-400 text-sm">${getDeliveryLabel()}</span><span class="text-xs text-neutral-600">Gratis</span>; }
+      document.getElementById('detail-total').textContent = fmt(calcSubtotal());
+      document.getElementById('detail-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+    function hideDetail() { document.getElementById('detail-modal').classList.add('hidden'); }
+
+    // ── TAP TOTAL UNTUK LIHAT DETAIL ──
+    document.getElementById('total-price').addEventListener('click', showDetail);
+    document.getElementById('total-price').style.cursor = 'pointer';
+    document.getElementById('item-count').addEventListener('click', showDetail);
+    document.getElementById('item-count').style.cursor = 'pointer';
+
+    // =============================================
+    // KIRIM KE WHATSAPP
+    // =============================================
+    function sendToWhatsApp() {
+      const hour = new Date().getHours();
+      if (hour < JAM_BUKA || hour >= JAM_TUTUP) {
+        showToast(Tutup ya! Buka jam ${JAM_BUKA}:00 - ${JAM_TUTUP}:00, 'warning');
+        return;
+      }
+
+      const name = getCustomerName();
+      if (!name) {
+        showToast('Isi nama pemesan dulu ya!', 'warning');
+        const w = document.getElementById('name-wrapper');
+        w.classList.add('shake');
+        setTimeout(() => w.classList.remove('shake'), 400);
+        document.getElementById('customer-name').focus();
+        return;
+      }
+
+      if (Object.keys(cart).length === 0) {
+        showToast('Pilih menu dulu ya!', 'warning');
+        return;
+      }
+
+      if (selectedDelivery === 'antar') {
+        const a = document.getElementById('address')?.value?.trim();
+        if (!a) {
+          showToast('Isi alamat pengiriman dulu ya!', 'warning');
+          document.getElementById('address')?.focus();
+          return;
+        }
+      }
+
+      const all = [...menus, ...addons];
+      const mids = menus.map(m => m.id);
+      const total = calcSubtotal();
+      const dl = getDeliveryLabel();
+      const addr = document.getElementById('address')?.value?.trim() || '';
+      const notes = document.getElementById('notes').value.trim();
+
+      let msg = 🍗 *PESANAN BARU - Mama Bibi*\n;
+      msg += ━━━━━━━━━━━━━━━\n;
+      msg += 👤 Nama: *${name}*\n;
+      msg += 📋 Order: *MB-${Date.now().toString(36).toUpperCase()}*\n\n;
+      msg += 🍽 *Pesanan:*\n;
+
+      for (const [id, q] of Object.entries(cart)) {
+        const it = all.find(i => i.id === id);
+        if (it && mids.includes(id)) {
+          msg += `  ${it.emoji} ${it.name} x${q} → ${fmt(it.price * q)}\n`;
+        }
+      }
+
+      const extras = Object.entries(cart).filter(([id]) => !mids.includes(id));
+      if (extras.length) {
+        msg += \n➕ *Extra:*\n;
+        for (const [id, q] of extras) {
+          const it = all.find(i => i.id === id);
+          if (it) msg += `  ${it.emoji} ${it.name} x${q} → ${fmt(it.price * q)}\n`;
+        }
+      }
+
+      msg += \n🚚 *Kirim:* ${dl};
+      if (addr) msg += \n📍 ${addr};
+
+      if (notes) msg += \n\n📝 *Catatan:* ${notes};
+
+      msg += \n\n━━━━━━━━━━━━━━━\n;
+      msg += 💰 *Total: ${fmt(total)}*;
+      msg += \n\n_Pembayaran bisa COD / transfer, tunggu konfirmasi dari penjual_ 🙏;
+
+      window.open(https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}, '_blank');
+
+      // Reset setelah kirim
+      showToast('Pesanan dikirim ke WhatsApp!', 'success');
+      setTimeout(() => {
+        cart = {};
+        document.getElementById('customer-name').value = '';
+        document.getElementById('notes').value = '';
+        const ai = document.getElementById('address'); if (ai) ai.value = '';
+        renderAll();
+      }, 500);
+    }
+
+    // ── Reset ──
+    function resetOrder() {
+      if (Object.keys(cart).length === 0 && !getCustomerName()) return;
+      cart = {};
+      document.getElementById('customer-name').value = '';
+      document.getElementById('notes').value = '';
+      renderAll();
+      showToast('Pesanan direset', 'info');
+    }
+
+    // ── Toast ──
+    function showToast(msg, type = 'info') {
+      const c = document.getElementById('toast-container'), t = document.createElement('div');
+      const cl = {
+        info: 'bg-neutral-800 border border-white/10 text-white',
+        warning: 'bg-yellow-900/60 border border-yellow-500/20 text-yellow-200',
+        success: 'bg-green-900/60 border border-green-500/20 text-green-200'
+      };
+      t.className = px-5 py-3 rounded-2xl ${cl[type]} text-sm font-medium backdrop-blur-md pointer-events-auto max-w-xs text-center;
+      t.style.animation = 'toastIn 0.3s ease forwards';
+      t.textContent = msg;
+      c.appendChild(t);
+      setTimeout(() => {
+        t.style.animation = 'toastOut 0.3s ease forwards';
+        setTimeout(() => t.remove(), 300);
+      }, 3000);
+    }
+
+    // ── Init ──
+    function renderAll() { renderMenus(); renderAddons(); renderDelivery(); updateBottomBar(); }
+    renderAll();
+    checkOpenStatus();
+    setInterval(checkOpenStatus, 60000);
+    lucide.createIcons();
+  </script>
+</body>
+</html>
